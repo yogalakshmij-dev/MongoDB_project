@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 p-4" style="background-color: rgba(223, 218, 218, 0.9); border-radius: 8px;">
+            <h2 class="text-center">Add New Employee</h2>
+            <hr>
+            <form action="{{ url_for('insert') }}" method="POST">
+                <div class="mb-3">
+                    <label for="employee_id">Employee ID:</label>
+                    <input type="text" id="employee_id" name="employee_id" required><br><br>
+                </div>
+                <div class="mb-3">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+                </div>
+                <div class="mb-3">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                </div>
+                <div class="mb-3">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" required><br><br>
+                </div>
+                <div class="mb-3">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department" required><br><br>
+                </div>
+                <div class="mb-3">
+                    <label for="hours_worked">Hours Worked:</label>
+                    <input type="number" id="hours_worked" name="hours_worked" required min="0"><br><br>
+                </div>
+                <div class="d-grid">
+                    <button type="submit">Add Employee</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

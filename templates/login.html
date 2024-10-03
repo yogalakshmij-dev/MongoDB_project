@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .login-container {
+        background-image: url('/static/css/images/bg1.jpeg'); /* Full background image */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the image */
+        border-radius: 8px; /* Rounded corners */
+        padding: 40px; /* Add more padding for a spacious form */
+        color: white; /* Text color for better visibility */
+        height: 500px; /* Set height for a larger form */
+        width: 100%; /* Full width of the parent container */
+        max-width: 600px; /* Restrict maximum width */
+    }
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.8); /* Light background for input fields */
+        color: black; /* Text color for input fields */
+    }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="login-container">
+            <h2 class="text-center">Login</h2>
+            <hr>
+            <form action="{{ url_for('login') }}" method="POST">
+                <div class="mb-3">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? 
+                <a href="{{ url_for('signup') }}" style="color: white;">Sign up here</a>.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

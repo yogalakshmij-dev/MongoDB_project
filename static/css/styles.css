@@ -1,0 +1,94 @@
+        /* Sidebar styling
+        .sidebar {
+            height: 100vh; /* Full height of the viewport 
+            width: 250px; /* Width of the sidebar 
+            position: fixed; /* Fixed position 
+            top: 0; /* Align to the top 
+            left: 0; /* Align to the left 
+            background-color: #1c1f2b; /* Background color 
+            padding-top: 20px; /* Padding at the top 
+        } 
+        .sidebar a {
+            padding: 10px 15px; /* Padding for links 
+            text-align: left; /* Align text to the left 
+            display: block; /* Block display for links 
+            color: white; /* Text color 
+            text-decoration: none; /* Remove underline from links 
+        }
+        .sidebar a:hover {
+            background-color: #575c66; /* Hover effect 
+        }
+        .main-content {
+            margin-left: 260px; /* Margin to accommodate the sidebar 
+            padding: 20px; /* Padding for the main content 
+            margin-top: -42px;
+        }
+        .navbar-custom {
+            background-color: #f8f9fa; /* Navbar background color 
+            position: fixed; /* Fixed position 
+            width: calc(100% - 250px); /* Width of navbar minus sidebar 
+            left: 250px; /* Align with sidebar 
+            z-index: 1000; /* Ensure navbar is on top 
+        }
+        .content-area { 
+            margin-top: 70px; /* Margin to avoid overlap with navbar 
+        }
+        h2{
+            margin-bottom: -3.5rem;
+            font-weight: 500;
+            line-height: 5.2;
+        }
+        h3{
+            font-size: 1.75rem;
+            margin-bottom: -3.5rem;
+            font-weight: 500;
+            line-height: 5.2;   
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-background {
+            background-image: url('/static/css/images/bg.jpg'); /* Add your background image here 
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .profile-card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-top: 70px;
+            object-fit: cover;
+            border: 3px solid white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .profile-card p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 5px;
+        } */
